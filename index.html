@@ -10,14 +10,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LocalStorage</title>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <h1>Bonjour Inconnu !</h1>
+  <h1 id="h1">Bonjour Inconnu !</h1>
 
-  <label for="nom"> Comment tu t'appelles ?</label>
-  <input type="text" id="nom" placeholder="nom?">
-  <button id="bouton">OK</button>
+  <div id="formulaire">
+
+    <label for="nom"> Comment tu t'appelles ?</label>
+    <input type="text" id="nom" placeholder="nom?">
+    <br>
+    <label for="age"> Quel age as-tu ?</label>
+    <input type="number" id="age" placeholder="age?">
+    <br>
+    <button id="btnOK">OK</button>
+    <br>
+
+  </div>
+  <button id="btnClear">Clear LocalStorage</button>
+
+  <a href="page2.html"><button>Lien vers page 2</button></a>
+
 </body>
 
 </html>
